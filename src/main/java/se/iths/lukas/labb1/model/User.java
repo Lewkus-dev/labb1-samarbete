@@ -1,18 +1,17 @@
 package se.iths.lukas.labb1.model;
 
-
 public class User {
     private int userId;
     private String userName;
-    private String email;
+    private String userEmail;
 
     public User() {
     }
 
-    public User(int userId, String userName, String email) {
+    public User(int userId, String userName, String userEmail) {
         this.userId = userId;
         this.userName = userName;
-        this.email = email;
+        this.userEmail = userEmail;
     }
 
     public int getUserId() {
@@ -31,12 +30,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
     @Override
@@ -44,7 +43,7 @@ public class User {
         return "User{" +
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
-                ", email='" + email + '\'' +
+                ", userEmail='" + userEmail + '\'' +
                 '}';
     }
 }
