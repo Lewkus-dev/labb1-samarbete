@@ -1,5 +1,9 @@
 package se.iths.lukas.labb1.model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class User {
     private int userId;
     private String userName;
@@ -46,4 +50,5 @@ public class User {
                 ", userEmail='" + userEmail + '\'' +
                 '}';
     }
+
 }
