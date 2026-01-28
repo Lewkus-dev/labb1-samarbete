@@ -10,17 +10,18 @@ import java.util.List;
 
 @Controller
 public class AnimalController {
-    Animal animal1 = new Animal("Catepillar", 100, false, "hide");
-    Animal animal2 = new Animal("Horse", 4, false, "run");
-    Animal animal3 = new Animal("Eagle", 2, true, "attack");
 
     @GetMapping("/animals")
     public String showAnimalsInfo(Model model) {
+        Animal animal1 = new Animal("Catepillar", 16, false, "hide");
+        Animal animal2 = new Animal("Horse", 4, false, "run");
+        Animal animal3 = new Animal("Eagle", 2, true, "attack");
+
         List<Animal> animals = new ArrayList<>();
         animals.add(animal1);
         animals.add(animal2);
         animals.add(animal3);
-        model.addAttribute(animals);
+        model.addAttribute("animals", animals);
         return "animals";
     }
 }
