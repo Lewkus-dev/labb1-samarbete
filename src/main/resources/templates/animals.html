@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals!</title>
+</head>
+<body>
+<h1>Animals</h1>
+<table>
+    <tr>
+        <th>Species</th>
+        <th>Number of legs</th>
+        <th>Does it fly</th>
+        <th>How does it survive</th>
+    </tr>
+    <tr th:each="animal:${animals}">
+        <td th:text="${animal.species}"></td>
+        <td th:text="${animal.numberOfLegs}"></td>
+        <td th:text="${animal.flying}"></td>
+        <td th:text="${animal.strategy}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
