@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colors</title>
+</head>
+<body>
+<h2>Colors</h2>
+
+<table>
+  <tr>
+    <th>Color Name</th>
+    <th>Hex Code</th>
+    <th>Opacity</th>
+  </tr>
+
+  <tr th:each="color: ${colors}">
+    <td th:text = "${color.colorName}"></td>
+    <td th:text="${color.hexCode}"></td>
+    <td th:text="${color.opacity}"></td>
+  </tr>
+</table>
+</body>
+</html>
