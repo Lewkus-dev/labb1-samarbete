@@ -4,13 +4,13 @@ public class Animal {
     private String species;
     private int numberOfLegs;
     private boolean flying;
-    private String stategy;
+    private String strategy;
 
-    public Animal(String species, int numberOfLegs, boolean flying, String stategy) {
+    public Animal(String species, int numberOfLegs, boolean flying, String strategy) {
         this.species = species;
         this.numberOfLegs = numberOfLegs;
         this.flying = flying;
-        this.stategy = stategy;
+        this.strategy = strategy;
     }
 
     public Animal() {
@@ -40,12 +40,12 @@ public class Animal {
         this.flying = flying;
     }
 
-    public String getStategy() {
-        return stategy;
+    public String getStrategy() {
+        return strategy;
     }
 
-    public void setStategy(String stategy) {
-        this.stategy = stategy;
+    public void setStrategy(String strategy) {
+        this.strategy = strategy;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class Animal {
                 "species='" + species + '\'' +
                 ", numberOfLegs=" + numberOfLegs +
                 ", flying=" + flying +
-                ", stategy='" + stategy + '\'' +
+                ", strategy='" + strategy + '\'' +
                 '}';
     }
 }

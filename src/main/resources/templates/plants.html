@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Plants!</title>
+</head>
+<body>
+<h1>Plants!</h1>
+<table>
+    <tr>
+        <th>Species</th>
+        <th>Color of flowers</th>
+        <th>Does it give fruits</th>
+        <th>Is it poisonous</th>
+    </tr>
+    <tr th:each="plant:${plants}">
+        <td th:text="${plant.name}"></td>
+        <td th:text="${plant.flowers}"></td>
+        <td th:text="${plant.fruits}"></td>
+        <td th:text="${plant.poison}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
