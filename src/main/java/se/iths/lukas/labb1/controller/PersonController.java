@@ -10,13 +10,13 @@ import java.util.List;
 
 @Controller
 public class PersonController {
-    private List<Person> personList = new ArrayList<>();
+    Person person1 = new Person(1, "Freise"     , 32, "freise@openemail.com");
+    Person person2 = new Person(2, "Erakmus"    , 28, "erakmus@openemail.com");
+    Person person3 = new Person(3, "Stonifan"   , 62, "Stonifan@openemail.com");
 
     @GetMapping("/persons")
     public String showPersonInfo(Model model) {
-        Person person1 = new Person(1, "Freise", 32, "freise.openemail.com");
-        Person person2 = new Person(2, "Erakmus", 28, "erakmus.openemail.com");
-        Person person3 = new Person(3, "Stonifan", 62, "Stonifan.openemail.com");
+        List<Person> personList = new ArrayList<>();
         personList.add(person1);
         personList.add(person2);
         personList.add(person3);
