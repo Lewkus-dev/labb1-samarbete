@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Games</title>
+</head>
+<body>
+
+
+<h1>Games</h1>
+
+<ul>
+    <li th:each="game : ${games}">
+        <strong th:text="${game.title}"></strong>
+        – <span th:text="${game.platform}"></span>
+        (Rating: <span th:text="${game.rating}"></span>)
+    </li>
+</ul>
+
+</body>
+</html>
