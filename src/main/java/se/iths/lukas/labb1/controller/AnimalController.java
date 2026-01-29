@@ -10,7 +10,7 @@ import java.util.List;
 
 @Controller
 public class AnimalController {
-
+    //Animal controller
     @GetMapping("/animals")
     public String showAnimalsInfo(Model model) {
         Animal animal1 = new Animal("Catepillar", 16, false, "hide");
