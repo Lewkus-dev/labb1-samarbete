@@ -10,13 +10,14 @@ import java.util.List;
 
 @Controller
 public class PlantController {
-    List<Plant> plants = new ArrayList<>();
+    Plant plant1 = new Plant("Banana", "yellow", true, false);
+    Plant plant2 = new Plant("Potato", "white", false, true);
+    Plant plant3 = new Plant("Magnolia", "magenta", false, false);
+
 
     @GetMapping("/plants")
     public String showPlantsInfo(Model model) {
-        Plant plant1 = new Plant("Banana", "yellow", true, false);
-        Plant plant2 = new Plant("Potato", "white", false, true);
-        Plant plant3 = new Plant("Magnolia", "magenta", false, false);
+        List<Plant> plants = new ArrayList<>();
         plants.add(plant1);
         plants.add(plant2);
         plants.add(plant3);
