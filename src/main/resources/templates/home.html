@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
-<h1 th:text="'Välkommen '+ ${name} + '!'"></h1>
+
+<h1 th:text="${message}"></h1>
+
+<h2>Navigate</h2>
+
+<a th:href="@{/animals}">
+    <button>Animals</button>
+</a>
+
+<a th:href="@{/books}">
+    <button>Books</button>
+</a>
+
+<a th:href="@{/cars}">
+    <button>Cars</button>
+</a>
+
+<a th:href="@{/colors}">
+    <button>Colors</button>
+</a>
+
+<a th:href="@{/games}">
+    <button>Games</button>
+</a>
+
+<a th:href="@{/movies}">
+    <button>Movies</button>
+</a>
+<a th:href="@{/persons}">
+    <button>Persons</button>
+</a>
+<a th:href="@{/plants}">
+    <button>Plants</button>
+</a>
+<a th:href="@{/users}">
+    <button>Users</button>
+</a>
+
 </body>
 </html>
